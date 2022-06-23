@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.calculator {
+    width: 220px;
+    height: 340px;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: brown;
+    
+    
+}
+
+button{
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+}
+button:hover{
+  background-color: yellow;
+  color: brown;
+}
+
+.display{
+    height: 40px;
+    background-color: aliceblue;
+    display: block;
+    margin: 10px auto 30px auto;
+    text-align: end;
+    border: 1px solid black;
+    border-radius: 2px;
+    line-height: 40px;
+    padding-right: 4px;
+
+}
+.calculator-buttons{
+  text-align: center;
+  padding: auto;
+}
