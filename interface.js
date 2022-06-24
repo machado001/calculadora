@@ -108,16 +108,16 @@ const mapaTeclado = {
     '7': 'tecla7',
     '8': 'tecla8',
     '9': 'tecla9',
-    '/':'operadorDividir',
-    '*':'operadorMultiplicar',
-    '-':'operadorSubtrair',
-    '+':'operadorSomar',
-    '=':'igual',
-    'Enter':'igual',
-    'Backspace':'backspace',
-    'c':'limparDisplay',
-    'Escape':'limparCalculo',
-    ',':'decimal',
+    '/': 'operadorDividir',
+    '*': 'operadorMultiplicar',
+    '-': 'operadorSubtrair',
+    '+': 'operadorSomar',
+    '=': 'igual',
+    'Enter': 'igual',
+    'Backspace': 'backspace',
+    'c': 'limparDisplay',
+    'Escape': 'limparCalculo',
+    ',': 'decimal',
 }
 const mapearTeclado = (evento) => {
     const tecla = evento.key
@@ -127,5 +127,7 @@ const mapearTeclado = (evento) => {
     if (teclaPermitida)
         document.getElementById(mapaTeclado[tecla]).click();
 
+
+    console.log(mapaTeclado[tecla])
 }
 document.addEventListener('keydown', mapearTeclado)
